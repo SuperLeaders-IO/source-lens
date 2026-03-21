@@ -1,0 +1,11 @@
+{
+  "name": "source-lens",
+  "version": "1.0.0",
+  "description": "Browse the web through the lens of any primary source. A research tool for students and teachers.",
+  "scripts": {
+    "build": "node build.js",
+    "help": "node build.js --help"
+  },
+  "keywords": ["education", "research", "primary-sources", "semantic-search", "chrome-extension"],
+  "license": "MIT"
+}

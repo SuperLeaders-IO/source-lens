@@ -1,0 +1,9 @@
+node_modules/
+.DS_Store
+._*
+.claude-flow/
+
+# Generated data — users build their own
+extension/data/fragments.json
+extension/data/vectors.bin
+extension/data/manifest.json

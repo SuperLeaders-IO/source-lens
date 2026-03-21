@@ -1,0 +1,21 @@
+Chapter 1: What is a Primary Source?
+
+A primary source is an original document or firsthand account created during the time period being studied. These include letters, diaries, speeches, photographs, government records, and legal documents. Primary sources provide direct evidence about a topic without interpretation by others.
+
+Unlike secondary sources, which analyze and interpret, primary sources let readers form their own conclusions. A historian's textbook about the Civil War is a secondary source. A letter written by a soldier during that war is a primary source.
+
+Chapter 2: Why Primary Sources Matter in Education
+
+Students who work directly with primary sources develop critical thinking skills that cannot be gained from textbooks alone. They learn to question authorship, consider context, identify bias, and evaluate evidence.
+
+When a student reads the actual text of the Constitution rather than a summary, they encounter the precise language the framers chose. They notice what was included and what was left out. They can ask: who wrote this? Who was excluded from "We the People"?
+
+Primary sources also make history feel real. A photograph from the Great Depression is more powerful than a paragraph describing poverty. A recording of Martin Luther King Jr. speaking carries weight that a transcript cannot fully convey.
+
+Chapter 3: How Source Lens Works
+
+Source Lens takes any primary source document and makes it searchable alongside your normal web browsing. As you read a news article, a Wikipedia page, or any website, the source document responds — showing you the passages most relevant to what you are reading right now.
+
+This is not artificial intelligence generating opinions. It is a retrieval system that finds real passages from real documents based on the similarity of ideas. The source speaks for itself. You do the thinking.
+
+The tool uses vector embeddings to represent the meaning of text as numbers. When two pieces of text are about similar topics, their numbers are close together. This is how the search finds relevant passages without needing exact keyword matches.

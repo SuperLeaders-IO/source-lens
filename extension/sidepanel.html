@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Source Lens</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="app">
+    <header id="header">
+      <div class="header-top">
+        <h1 id="lens-title">Source Lens</h1>
+        <span class="status" id="status">loading...</span>
+      </div>
+      <p class="subtitle" id="lens-subtitle">Loading source...</p>
+    </header>
+
+    <div id="search-area">
+      <div class="search-box">
+        <input type="text" id="search-input" placeholder="Search the source, or scan this page..." autocomplete="off">
+        <button id="scan-btn" title="Scan current page">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <path d="M1 4V2a1 1 0 011-1h2M12 1h2a1 1 0 011 1v2M15 12v2a1 1 0 01-1 1h-2M4 15H2a1 1 0 01-1-1v-2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            <path d="M4 8h8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </button>
+      </div>
+      <div class="search-meta" id="search-meta"></div>
+    </div>
+
+    <div id="mode-bar">
+      <button class="mode-btn active" data-mode="search">Search</button>
+      <button class="mode-btn" data-mode="scan">Page Scan</button>
+      <button class="mode-btn" data-mode="browse">Browse</button>
+    </div>
+
+    <div id="results-container">
+      <div id="results-list"></div>
+      <div id="empty-state">
+        <div class="empty-icon">&#x1F4D6;</div>
+        <p>Type a question or click scan to find<br>what your source says about this page.</p>
+        <p class="empty-hint">The source document will respond to<br>whatever you're reading on the web.</p>
+      </div>
+    </div>
+
+    <div id="detail-panel" class="hidden">
+      <button id="detail-close">&larr; Back</button>
+      <div id="detail-content"></div>
+    </div>
+
+    <footer id="footer">
+      <span id="stats"></span>
+      <span>Source Lens</span>
+    </footer>
+  </div>
+
+  <script type="module" src="sidepanel.js"></script>
+</body>
+</html>
