@@ -387,3 +387,103 @@ That's digital sovereignty. It's not a concept to be taught. It's a capacity to 
 For students who have grown up inside algorithmic recommendation systems, this may be genuinely disorienting. The absence of a feed, a suggestion, a notification — the silence of a tool that only responds when asked — can feel like deprivation rather than liberation. That's okay. Name it. "This feels different because nothing is trying to capture your attention right now. The tool is waiting for you. Not the other way around."
 
 That reorientation — from consumer to builder, from audience to author, from user to sovereign — is the actual curriculum. The primary sources are the vehicle. The tool is the proof. But the transformation is in the student.
+
+---
+
+## Making It Yours: Adapting Source Lens With AI Assistance
+
+### Why this isn't edtech
+
+Edtech builds something for you and sells it back to you. The sales pitch requires you to feel overwhelmed so the product can feel like relief. The business model depends on your dependence.
+
+This is the opposite. Source Lens is a starting point you own completely. The code is yours. The lesson plan is yours. The adaptations you make for your students — their reading levels, their IEPs, their languages, their interests — those are yours too. No vendor will ever understand your classroom the way you do.
+
+The question you should be asking is not "does this tool meet all the guidelines?" The question is: "do I have the power to make it meet the guidelines that matter for *my* students?" The answer is yes, and here's how.
+
+### Using Claude Code (or any AI coding assistant) to adapt Source Lens
+
+You can point an AI coding tool at this repo and have a conversation about what you need. This isn't outsourcing the work. It's the same thing you do when you talk to a colleague about a lesson plan — except this colleague can also write the code.
+
+Here's what that looks like in practice.
+
+**Clone the repo and open it with Claude Code:**
+
+```bash
+git clone https://github.com/SuperLeaders-IO/source-lens.git
+cd source-lens
+claude
+```
+
+Then describe what you need in plain language:
+
+**For accessibility:**
+- "The side panel text is too small for my low-vision students. Increase the base font size to 16px and add a font size toggle in the UI."
+- "Add high-contrast mode that meets WCAG AAA contrast ratios."
+- "Make sure all interactive elements are keyboard-navigable and have proper ARIA labels."
+- "Add a screen reader announcement when search results appear."
+- "My student uses a switch device. Make sure the tab order in the side panel is logical and that every button has a visible focus indicator."
+
+**For language and reading level:**
+- "Translate the interface labels into Spanish."
+- "My students read at a 6th grade level. Add a toggle that shows a simplified preview of each passage — shorter sentences, common words."
+- "Add a word count and estimated reading level to each result card so students can choose passages they're comfortable with."
+
+**For different needs:**
+- "One of my students is deaf. When they scan a page, also show the passage as a highlighted overlay on the page itself, not just in the sidebar."
+- "Add a 'read aloud' button that uses the browser's built-in text-to-speech to read the selected passage."
+- "My students have 504 plans that require extended time. Add a timer to the scan results that shows how long they've been reading each passage."
+
+**For your specific curriculum:**
+- "I teach 8th grade US History. Rewrite the lesson plan for that context, focusing on primary sources from the Civil War and Reconstruction."
+- "I need this for AP Literature. Modify the compare mode so students can load two novels and see where their themes overlap."
+- "Add a 'cite this' button that formats the passage as an MLA citation so students can paste it into their essays."
+
+**For district compliance:**
+- "My district requires FERPA compliance documentation. Add a section to the README explaining that no student data leaves the browser."
+- "Generate a VPAT (Voluntary Product Accessibility Template) for this tool based on what it currently does and doesn't do."
+- "My district's ed tech review board needs a data flow diagram. Create one showing that all processing happens locally."
+
+### The point is not that AI writes perfect code
+
+The AI will get things mostly right and sometimes wrong. You'll test it. You'll adjust. You'll say "that's not quite what I meant" and refine. That process — describing what your students need, evaluating the result, iterating — is the same process your students are doing with Source Lens. You're modeling it.
+
+And when you bring that modified version into your classroom and say "I changed the tool this weekend because I realized the font was too small for some of you" — that's a more powerful lesson about technology than any curriculum unit. You just showed them that tools serve people, not the other way around.
+
+### Accessibility is not a checklist you buy
+
+The edtech industry sells accessibility as a feature. "Our platform is WCAG 2.1 AA compliant." That sounds reassuring. But compliance is a floor, not a ceiling. It means the tool passes automated tests. It doesn't mean it works for *your* student, in *your* classroom, with *their* specific needs.
+
+When you build the tool — or when you modify a tool you own — you can go beyond compliance:
+
+- **You know your students.** A vendor's accessibility team doesn't know that Marcus needs the text to be left-aligned, not justified, because of his dyslexia. You know that. You can change it.
+- **You can respond in real time.** A student says "I can't read the results, they're too light." You open the CSS, change a color, reload. Done. A vendor ticket for the same request takes weeks.
+- **You can make choices a vendor won't.** Maybe you want the tool to be intentionally simple — fewer features, less distraction — because your students are overwhelmed by complex UIs. No vendor will ship a "less" button. You can build one.
+
+The answer to "how do you ensure accessibility requirements are met?" is: by being the person who meets them, for the specific people who need them met, in the specific way they need it. That can't be purchased. It can only be practiced.
+
+### Building alongside students
+
+The most powerful version of this is when you don't do the adapting alone. You do it with students.
+
+"Our tool doesn't work well for screen readers yet. Who wants to fix that?"
+
+A student who spends an afternoon adding ARIA labels to a search interface has learned more about accessibility than any lecture could teach. They've learned that accessibility is not an abstract requirement — it's a specific act of care for a specific person.
+
+A student who translates the interface into their home language has learned something about themselves and their community's place in technology. That's not a feature request. That's identity.
+
+A student who changes the chunk size because their source works better with shorter passages has learned that every engineering decision is a judgment call, and they're qualified to make it.
+
+This is what building looks like. It's not clean. It's not polished. It won't pass a vendor demo. But it belongs to the people who made it, and that makes all the difference.
+
+### A practical starting point
+
+If you've never used a coding assistant before, here's your version of the terminal courage moment:
+
+1. Install Claude Code or open any AI coding tool
+2. Point it at the Source Lens repo
+3. Say: "I'm a teacher. I've never modified code before. I need to make the side panel text bigger for a student with low vision. Walk me through it."
+4. Follow the steps. Test it. See it change.
+
+That's it. You just modified an AI system to meet a student's needs. No ticket filed. No vendor contacted. No procurement cycle. You did it yourself, and it took five minutes.
+
+Now imagine what else you could do.
